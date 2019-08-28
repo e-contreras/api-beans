@@ -1,0 +1,41 @@
+package py.com.econtreras.api.beans;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import java.io.Serializable;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import lombok.Data;
+
+@Data
+public class ProductRequest implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+
+    @JsonProperty("id")
+    private Integer ProductId;
+    @NotEmpty(message = "the field code can't be empty")
+    @NotNull(message = "the field code can't be null")
+    @JsonProperty("code")
+    private String code;
+    @JsonProperty("bar_code")
+    private String barCode;
+    @NotEmpty(message = "the field description can't be empty")
+    @NotNull(message = "the field description can't be null")
+    @JsonProperty("nom_producto")
+    private String productName;
+    @JsonProperty("descripcion")
+    private String description;
+//    @NotEmpty(message = "the field brand can't be empty")
+//    @NotNull(message = "the field brand can't be null")
+    @JsonProperty("brand_id")
+    private Integer brandId;
+//    @NotEmpty(message = "the field category can't be empty")
+//    @NotNull(message = "the field category can't be null")
+    @JsonProperty("category_id")
+    private Integer categoryId;
+    @JsonProperty("eraser")
+    private short eraser;
+    @JsonProperty("user_id")
+    private Integer userId;
+    
+}
