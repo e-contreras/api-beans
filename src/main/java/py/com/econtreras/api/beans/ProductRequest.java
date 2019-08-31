@@ -21,9 +21,9 @@ public class ProductRequest implements Serializable {
     private String barCode;
     @NotEmpty(message = "the field description can't be empty")
     @NotNull(message = "the field description can't be null")
-    @JsonProperty("nom_producto")
+    @JsonProperty("product_name")
     private String productName;
-    @JsonProperty("descripcion")
+    @JsonProperty("description")
     private String description;
 //    @NotEmpty(message = "the field brand can't be empty")
 //    @NotNull(message = "the field brand can't be null")

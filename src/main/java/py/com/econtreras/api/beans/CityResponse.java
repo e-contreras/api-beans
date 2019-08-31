@@ -12,19 +12,15 @@ import org.springframework.hateoas.ResourceSupport;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ProductResponse extends ResourceSupport implements Serializable {
+public class CityResponse extends ResourceSupport implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @JsonProperty("id")
-    private Integer idProduct;
-    @JsonProperty("code")
-    private String code;
-    @JsonProperty("bar_code")
-    private String barCode;
-    @JsonProperty("product_name")
-    private String productName;
-    @JsonProperty("descripcion")
-    private String description;
-    
+    private Integer cityId;
+    @NotEmpty(message = "the field description can't be empty")
+    @NotNull(message = "the field description can't be null")
+    @JsonProperty("city_name")
+    private String cityName;
+
 }

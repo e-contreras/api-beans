@@ -6,25 +6,19 @@ import java.io.Serializable;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import org.springframework.hateoas.ResourceSupport;
 
 @Data
-@EqualsAndHashCode(callSuper = false)
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class ProductResponse extends ResourceSupport implements Serializable {
+public class NeighborhoodRequest implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @JsonProperty("id")
-    private Integer idProduct;
-    @JsonProperty("code")
-    private String code;
-    @JsonProperty("bar_code")
-    private String barCode;
-    @JsonProperty("product_name")
-    private String productName;
-    @JsonProperty("descripcion")
+    private Integer neighborhoodId;
+    @NotEmpty(message = "the field description can't be empty")
+    @NotNull(message = "the field description can't be null")
+    @JsonProperty("description")
     private String description;
-    
+    @JsonProperty("city_id")
+    private Integer cityId;
 }

@@ -19,11 +19,13 @@ public class Vehicle implements Serializable {
     private String brand;
     @JsonProperty("model")
     private String model;
+    @JsonProperty("color")
+    private String color;
     @JsonProperty("year")
     private Integer year;
     @JsonProperty("capacity")
     private String capacity;
-    @JsonProperty("documentNumber")
+    @JsonProperty("document_number")
     private String documentNumber;
     @JsonProperty("plate")
     private String plate;
