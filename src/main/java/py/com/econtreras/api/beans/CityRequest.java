@@ -14,7 +14,7 @@ public class CityRequest implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @JsonProperty("id")
-    private Integer cityId;
+    private Integer id;
     @NotEmpty(message = "the field city_name can't be empty")
     @NotNull(message = "the field city_name can't be null")
     @JsonProperty("city_name")

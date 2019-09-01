@@ -17,7 +17,7 @@ public class CategoryRequest implements Serializable {
     @NotNull(message = "the field description can't be null")
     @JsonProperty("description")
     private String description;
-    @JsonProperty("super_category")
-    private Integer superCategory;
+    @JsonProperty("super_category_id")
+    private Integer superCategoryId;
 
 }

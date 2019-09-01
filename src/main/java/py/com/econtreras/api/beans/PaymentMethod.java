@@ -1,6 +1,5 @@
 package py.com.econtreras.api.beans;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
 import javax.validation.constraints.NotEmpty;
@@ -8,8 +7,7 @@ import javax.validation.constraints.NotNull;
 import lombok.Data;
 
 @Data
-@JsonInclude(JsonInclude.Include.NON_NULL)
-public class NeighborhoodRequest implements Serializable {
+public class PaymentMethod implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -19,6 +17,5 @@ public class NeighborhoodRequest implements Serializable {
     @NotNull(message = "the field description can't be null")
     @JsonProperty("description")
     private String description;
-    @JsonProperty("city_id")
-    private Integer cityId;
+
 }

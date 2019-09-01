@@ -17,5 +17,7 @@ public class PersonType implements Serializable {
     @NotNull(message = "the field descrption can't be null")
     @JsonProperty("description")
     private String description;
+    @JsonProperty("abbreviation")
+    private String abbreviation;
     
 }

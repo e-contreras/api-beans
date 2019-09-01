@@ -12,7 +12,7 @@ public class ProductRequest implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @JsonProperty("id")
-    private Integer ProductId;
+    private Integer id;
     @NotEmpty(message = "the field code can't be empty")
     @NotNull(message = "the field code can't be null")
     @JsonProperty("code")
