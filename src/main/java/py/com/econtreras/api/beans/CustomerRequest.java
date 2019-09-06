@@ -7,11 +7,10 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-public class ProviderRequest extends PersonRequest implements Serializable {
+public class CustomerRequest extends PersonRequest implements Serializable{
 
     private static final long serialVersionUID = 1L;
 
     @JsonProperty("id")
     private Integer id;
-    
 }

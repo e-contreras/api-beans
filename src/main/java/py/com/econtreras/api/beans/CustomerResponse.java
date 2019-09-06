@@ -1,15 +1,22 @@
 package py.com.econtreras.api.beans;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
 import java.util.Date;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import org.springframework.hateoas.ResourceSupport;
 
 @Data
-public class PersonRequest implements Serializable {
+@EqualsAndHashCode(callSuper = false)
+@JsonInclude(JsonInclude.Include.NON_NULL)
+public class CustomerResponse extends ResourceSupport implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    @JsonProperty("id")
+    private Integer customerId;
     @JsonProperty("person_id")
     private Integer personId;
     @JsonProperty("name")
@@ -28,9 +35,5 @@ public class PersonRequest implements Serializable {
     private String phone;
     @JsonProperty("cellphone")
     private String cellphone;
-    @JsonProperty("document_type_id")
-    private Integer documentTypeId;
-    @JsonProperty("person_type_id")
-    private Integer personTypeId;
     
 }

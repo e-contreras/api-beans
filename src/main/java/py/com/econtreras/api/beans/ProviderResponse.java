@@ -3,6 +3,7 @@ package py.com.econtreras.api.beans;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
+import java.util.Date;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.hateoas.ResourceSupport;
@@ -16,5 +17,23 @@ public class ProviderResponse extends ResourceSupport implements Serializable {
 
     @JsonProperty("id")
     private Integer providerId;
+    @JsonProperty("person_id")
+    private Integer personId;
+    @JsonProperty("name")
+    private String name;
+    @JsonProperty("lastname")
+    private String lastname;
+    @JsonProperty("business_name")
+    private String businessName;
+    @JsonProperty("document_number")
+    private String documentNumber;
+    @JsonProperty("birthday")
+    private Date birthday;
+    @JsonProperty("email")
+    private String email;
+    @JsonProperty("phone")
+    private String phone;
+    @JsonProperty("cellphone")
+    private String cellphone;
     
 }
