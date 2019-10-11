@@ -2,6 +2,7 @@ package py.com.econtreras.api.beans;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
+import java.util.List;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import lombok.Data;
@@ -37,5 +38,7 @@ public class ProductRequest implements Serializable {
     private short eraser;
     @JsonProperty("user_id")
     private Integer userId;
+    @JsonProperty("pictures")
+    private List<String> pictures;
     
 }
