@@ -2,10 +2,10 @@ package py.com.econtreras.api.beans;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
-import java.util.List;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import lombok.Data;
+import org.springframework.web.multipart.MultipartFile;
 
 @Data
 public class ProductRequest implements Serializable {
@@ -26,12 +26,8 @@ public class ProductRequest implements Serializable {
     private String productName;
     @JsonProperty("description")
     private String description;
-//    @NotEmpty(message = "the field brand can't be empty")
-//    @NotNull(message = "the field brand can't be null")
     @JsonProperty("brand_id")
     private Integer brandId;
-//    @NotEmpty(message = "the field category can't be empty")
-//    @NotNull(message = "the field category can't be null")
     @JsonProperty("category_id")
     private Integer categoryId;
     @JsonProperty("eraser")
@@ -39,6 +35,7 @@ public class ProductRequest implements Serializable {
     @JsonProperty("user_id")
     private Integer userId;
     @JsonProperty("pictures")
-    private List<String> pictures;
+    private MultipartFile file;
+    private String model;
     
 }
