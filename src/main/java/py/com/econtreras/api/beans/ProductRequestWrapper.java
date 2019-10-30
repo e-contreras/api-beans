@@ -12,6 +12,6 @@ import java.util.List;
 public class ProductRequestWrapper {
 
     @JsonProperty("data")
-    private List<ProductRequest> data;
+    private List<ProductBean> data;
 
 }
