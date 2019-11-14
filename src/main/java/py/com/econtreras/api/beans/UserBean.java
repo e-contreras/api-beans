@@ -17,4 +17,5 @@ public class UserBean {
     private String name;
     private String lastName;
     private Integer loginFailed;
+    private String email;
 }
