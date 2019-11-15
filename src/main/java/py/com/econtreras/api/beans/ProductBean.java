@@ -43,6 +43,7 @@ public class ProductBean {
     private MultipartFile file;
     @JsonProperty("image_db")
     private String imageDB;
+    private Integer quantity;
 
 
 }
