@@ -10,17 +10,12 @@ import org.springframework.hateoas.ResourceSupport;
 @Data
 @EqualsAndHashCode(callSuper = false)
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class FeeResponse extends ResourceSupport implements Serializable {
+public class RoleResponse extends ResourceSupport implements Serializable {
 
     private static final long serialVersionUID = 1L;
-
+    
     @JsonProperty("id")
-    private Integer feeId;
-    @JsonProperty("fee_number")
-    private Integer feeNumber;
-    @JsonProperty("ponderator")
-    private Float ponderator;
-    @JsonProperty("products_id")
-    private String productsId;
-
+    private Integer roleId;
+    @JsonProperty("description")
+    private String description;
 }
