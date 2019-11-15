@@ -17,5 +17,7 @@ public class FeeRequest implements Serializable {
     private Float ponderator;
     @JsonProperty("category_id")
     private Integer categoryId;
+    @JsonProperty("products_id")
+    private String productsId;
     
 }
