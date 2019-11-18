@@ -6,7 +6,7 @@ import lombok.Data;
 public class ImageRequest {
 	
 	private Integer id;
-	private String src;
+	private byte[] src;
 	private int order;
 	private int deleted;
 

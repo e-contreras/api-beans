@@ -35,7 +35,7 @@ public class ProductRequest implements Serializable {
     @JsonProperty("user_id")
     private Integer userId;
     @JsonProperty("pictures")
-    private MultipartFile file;
+    private byte[] file;
     private String model;
     
 }
