@@ -11,5 +11,6 @@ public class CartProductBean {
     private Integer ProductId;
     private BigInteger price;
     private Integer quantity;
+    private BigInteger purcharsePrice;
 
 }
