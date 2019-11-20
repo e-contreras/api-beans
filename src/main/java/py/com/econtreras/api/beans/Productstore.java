@@ -23,5 +23,5 @@ public class Productstore {
     @JsonProperty("description")
     private String description;
     @JsonProperty("images")
-    private List<byte[]> images;
+    private List<String> images;
 }
