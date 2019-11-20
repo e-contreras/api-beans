@@ -13,5 +13,8 @@ public class ProviderRequest extends PersonRequest implements Serializable {
 
     @JsonProperty("id")
     private Integer id;
-    
+
+    @JsonProperty(value = "person", required = false)
+    private PersonRequest person;
+
 }
