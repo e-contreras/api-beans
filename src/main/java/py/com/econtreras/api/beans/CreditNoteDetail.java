@@ -7,7 +7,7 @@ import lombok.Data;
 
 @Data
 @JsonInclude(JsonInclude.Include.NON_NULL)
-public class DebitNoteDetail implements Serializable {
+public class CreditNoteDetail implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -17,9 +17,11 @@ public class DebitNoteDetail implements Serializable {
     private String concept;
     @JsonProperty(value = "cant", required = false)
     private int quantity;
+    @JsonProperty(value = "monto", required = false)
+    private double amount;
     @JsonProperty(value = "tip_impuesto", required = false)
-    private int taxeType;
-    @JsonProperty(value = "not_debito", required = false)
-    private Integer debitNote;
-
+    private int taxeTaype;
+    @JsonProperty(value = "not_credito", required = false)
+    private Integer idCreditNote;
+    
 }
