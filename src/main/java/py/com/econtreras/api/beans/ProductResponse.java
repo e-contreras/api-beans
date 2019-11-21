@@ -26,5 +26,7 @@ public class ProductResponse extends ResourceSupport implements Serializable {
     private String productName;
     @JsonProperty("descripcion")
     private String description;
+    @JsonProperty("estado")
+    private short erased;
     
 }

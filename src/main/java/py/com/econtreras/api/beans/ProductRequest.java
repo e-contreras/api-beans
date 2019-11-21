@@ -37,5 +37,6 @@ public class ProductRequest implements Serializable {
     @JsonProperty("pictures")
     private byte[] file;
     private String model;
-    
+    @JsonProperty(value = "impuesto" , required = false)
+    private Integer taxtType; 
 }

@@ -5,7 +5,6 @@ import lombok.Data;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
@@ -44,6 +43,8 @@ public class ProductBean {
     @JsonProperty("image_db")
     private String imageDB;
     private Integer quantity;
+    @JsonProperty(value="impuesto", required = false)
+    private Integer taxtType;  
 
 
 }
