@@ -12,16 +12,31 @@ public class Productstore {
 
     @JsonProperty("id")
     private Integer id;
+    
     @JsonProperty("product_name")
     private String productName;
+    
     @JsonProperty("available")
     private Integer available;
+    
     @JsonProperty("purchase_prices")
     private BigInteger purchasePrice;
+    
     @JsonProperty("sale_prices")
     private BigInteger salePrice;
+    
     @JsonProperty("description")
     private String description;
+    
+    @JsonProperty("brand")
+    private String brand;
+    
+    @JsonProperty("category_id")
+    private Integer categoryId;
+    
+    @JsonProperty("category_name")
+    private String categoryName;    
+    
     @JsonProperty("images")
     private List<String> images;
 }
