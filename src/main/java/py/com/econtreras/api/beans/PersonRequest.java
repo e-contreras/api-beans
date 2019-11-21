@@ -2,7 +2,7 @@ package py.com.econtreras.api.beans;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
-import java.util.Date;
+import java.time.LocalDate;
 import lombok.Data;
 
 @Data
@@ -21,7 +21,7 @@ public class PersonRequest implements Serializable {
     @JsonProperty("document_number")
     private String documentNumber;
     @JsonProperty("birthday")
-    private Date birthday;
+    private LocalDate birthday;
     @JsonProperty("email")
     private String email;
     @JsonProperty("phone")

@@ -5,6 +5,7 @@
  */
 package py.com.econtreras.api.beans;
 
+import java.time.LocalDate;
 import java.util.Date;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,7 +24,7 @@ public class RegisterRequest {
     private String documentNumber;
     private Integer documentType;
     private Integer personType;
-    private Date birthday;
+    private LocalDate birthday;
     private String email;
     private String phone;
     private String cellphone;
