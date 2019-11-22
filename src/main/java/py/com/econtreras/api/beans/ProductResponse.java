@@ -28,7 +28,7 @@ public class ProductResponse extends ResourceSupport implements Serializable {
     @JsonProperty("estado")
     private short erased;
     @JsonProperty("marca")
-    private String brand;
+    private BrandBean brand;
     @JsonProperty("categoria")
     private CategoryResponse category;
     @JsonProperty("imagenes")
