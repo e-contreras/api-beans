@@ -2,6 +2,7 @@ package py.com.econtreras.api.beans;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
+import java.util.List;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import lombok.Data;
@@ -35,7 +36,7 @@ public class ProductRequest implements Serializable {
     @JsonProperty("user_id")
     private Integer userId;
     @JsonProperty("pictures")
-    private byte[] file;
+    private List<byte[]> file;
     private String model;
     @JsonProperty(value = "impuesto" , required = false)
     private Integer taxtType; 

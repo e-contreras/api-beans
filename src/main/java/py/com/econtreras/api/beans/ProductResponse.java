@@ -3,6 +3,7 @@ package py.com.econtreras.api.beans;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
+import java.util.List;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import lombok.Data;
@@ -28,5 +29,9 @@ public class ProductResponse extends ResourceSupport implements Serializable {
     private String description;
     @JsonProperty("estado")
     private short erased;
+    @JsonProperty("files")
+    private List<String> files;
+    @JsonProperty("tax_type")
+    private Integer taxType;
     
 }
