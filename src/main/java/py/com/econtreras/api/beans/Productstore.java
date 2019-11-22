@@ -27,7 +27,7 @@ public class Productstore {
     
     @JsonProperty("description")
     private String description;
-    
+
     @JsonProperty("brand")
     private String brand;
     
