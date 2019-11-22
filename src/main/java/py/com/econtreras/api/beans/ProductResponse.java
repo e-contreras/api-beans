@@ -32,5 +32,5 @@ public class ProductResponse extends ResourceSupport implements Serializable {
     @JsonProperty("categoria")
     private CategoryResponse category;
     @JsonProperty("imagenes")
-    private List<String> images;
+    private List<byte[]> images;
 }
