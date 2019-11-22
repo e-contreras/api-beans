@@ -10,7 +10,7 @@ public class CartBean {
     private List<CartProductBean> cartProductBeanList;
     private Integer solicitudeId;
     private String status;
-
+    private Integer client;
 
 
 }

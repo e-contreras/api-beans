@@ -37,6 +37,9 @@ public class Productstore {
     @JsonProperty("category_name")
     private String categoryName;    
     
+    @JsonProperty("quantity")
+    private Integer quantity;    
+    
     @JsonProperty("images")
     private List<String> images;
 }
