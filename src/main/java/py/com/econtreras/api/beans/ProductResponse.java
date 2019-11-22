@@ -3,8 +3,6 @@ package py.com.econtreras.api.beans;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.io.Serializable;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import org.springframework.hateoas.ResourceSupport;
@@ -28,5 +26,8 @@ public class ProductResponse extends ResourceSupport implements Serializable {
     private String description;
     @JsonProperty("estado")
     private short erased;
-    
+    @JsonProperty("marca")
+    private String brand;
+    @JsonProperty("categoria")
+    private CategoryResponse category;
 }
