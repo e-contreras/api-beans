@@ -13,14 +13,19 @@ public class CreditNoteDetail implements Serializable {
 
     @JsonProperty(value = "id", required = false)
     private Integer id;
+    
     @JsonProperty(value = "concepto", required = false)
     private String concept;
+    
     @JsonProperty(value = "cant", required = false)
     private int quantity;
+    
     @JsonProperty(value = "monto", required = false)
     private double amount;
+    
     @JsonProperty(value = "tip_impuesto", required = false)
     private int taxeTaype;
+    
     @JsonProperty(value = "not_credito", required = false)
     private Integer idCreditNote;
     

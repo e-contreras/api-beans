@@ -13,13 +13,17 @@ public class DebitNote implements Serializable {
 
     @JsonProperty(value = "id", required = false)
     private Integer id;
+    
     @JsonProperty(value = "num_documento", required = false)
     private String documentNumber;
+    
     @JsonProperty(value = "num_doc_relacionado", required = false)
     private String relatedDocument;
+    
     @JsonProperty(value = "comentario", required = false)
     private String comment;
+    
     @JsonProperty(value = "remitente", required = false)
-    private Integer sender;
+    private UserBean sender;
 
 }
