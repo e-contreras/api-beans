@@ -16,5 +16,6 @@ public class SolicitudeResponse {
     private Date confirmationDate;
     private List<Productstore> ProductBeanList;
     private String status;
+    private UserBean cliente;
     
 }
